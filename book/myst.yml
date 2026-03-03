@@ -3,7 +3,7 @@ project:
   title: Montandon Data Fetching Examples
   authors:
     - name: Arun Gandhi
-  github: IFRCGo/Montandon-Data-Fetching-Examples
+  github: IFRCGo/montandon-notebooks
   keywords:
     - disaster data
     - STAC API
@@ -11,10 +11,16 @@ project:
     - IFRC
     - data analysis
     - visualization
+  jupyter:
+    binder:
+      url: https://mybinder.org
+      repo: IFRCGo/montandon-notebooks
+      ref: main
+  binder: https://mybinder.org
   toc:
     - file: intro.md
     - file: getting-started.md
-    - title: Getting Started
+    - title: Intro Notebook
       children:
         - file: notebooks/01_Getting_Started_Montandon_STAC_API.ipynb
           title: Introduction to Montandon STAC API
