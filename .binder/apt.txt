@@ -1,0 +1,4 @@
+# System packages for Binder (installed via apt-get)
+# Chromium browser + driver for Selenium (Notebook 04: Cyclone GIF export)
+chromium
+chromium-driver

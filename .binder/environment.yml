@@ -1,43 +1,42 @@
 name: montandon-examples
 channels:
   - conda-forge
-  - defaults
+# Only 'conda-forge' — dropping 'defaults' avoids channel conflict resolution
+# which is a major source of slow solver times on Binder.
+channel_priority: strict
 dependencies:
-  - python=3.12
+  - python=3.11  # 3.11 has more pre-built binaries than 3.12, faster install
   - pip
-  # Core data/API packages
-  - pystac-client
-  - pystac
-  - pandas
-  - numpy
-  - requests
-  
-  # Visualization packages
-  - matplotlib-base  # lighter than full matplotlib
-  - seaborn
-  - plotly
-  - folium
-  
-  # Geospatial packages
+
+  # Geospatial packages (conda only — need compiled C extensions)
   - geopandas
   - shapely
-  
-  # Analysis packages
-  - scikit-learn
-  - statsmodels
-  
-  # Jupyter packages
+
+  # Jupyter kernel (conda for reliability)
   - jupyterlab
   - ipywidgets
   - ipykernel
-  
-  # Utilities
-  - pillow
-  - python-dateutil
 
-  # Browser automation (Notebook 04: Cyclone GIF export)
-  - selenium
-
-  # pip-only packages
+  # Everything else via pip — much faster than conda for pure-Python packages
   - pip:
+    # Core data/API packages
+    - pystac-client
+    - pystac
+    - pandas
+    - numpy
+    - requests
+    # Visualization
+    - matplotlib
+    - seaborn
+    - plotly
+    - folium
+    # Analysis
+    - scikit-learn
+    - statsmodels
+    # Utilities
+    - pillow
+    - python-dateutil
+    # Browser automation (chromium + chromedriver via apt.txt)
+    - selenium
+    # Other
     - pymannkendall
