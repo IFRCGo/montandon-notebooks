@@ -12,11 +12,14 @@ project:
     - data analysis
     - visualization
   jupyter:
+    server:
+      enabled: true
+      url: https://mybinder.org
     binder:
       url: https://mybinder.org
       repo: IFRCGo/montandon-notebooks
       ref: main
-  binder: https://mybinder.org
+  thebe: true
   toc:
     - file: intro.md
     - file: getting-started.md

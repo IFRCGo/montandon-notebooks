@@ -6,9 +6,9 @@ name: Deploy JupyterBook to GitHub Pages
 
 on:
   push:
-    branches: [master, jupyterbook]
+    branches: [master, jupyterbook, main]
   pull_request:
-    branches: [master]
+    branches: [master, main]
   workflow_dispatch: # Allow manual trigger
 
 env:
@@ -76,8 +76,8 @@ jobs:
           path: ./book/_build/html
 
   deploy:
-    # Deploy on push to master/jupyterbook branch, or manual trigger
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/jupyterbook'))
+    # Deploy on push to master/jupyterbook/main branch, or manual trigger
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/jupyterbook' || github.ref == 'refs/heads/main'))
     needs: build
     environment:
       name: github-pages
