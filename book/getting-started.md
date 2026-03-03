@@ -1,6 +1,30 @@
 # Getting Started
 
-This guide will help you set up your environment to run the Montandon data fetching examples locally.
+This guide will help you set up your environment to run the Montandon data fetching examples.
+
+## Run Notebooks in Binder (No Setup Required)
+
+Click any badge below to instantly open that notebook in a live Binder environment — no installation needed.
+
+| Notebook | Launch |
+|----------|--------|
+| 01 · Introduction to Montandon STAC API | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/01_Getting_Started_Montandon_STAC_API.ipynb) |
+| 02 · Montandon Data Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/02_Montandon_data_analysis.ipynb) |
+| 03 · Time Series Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/03_Time_Series_Analysis.ipynb) |
+| 04 · Recent Cyclone Tracking | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/04_Recent_Cyclone_Tracking.ipynb) |
+| 05 · Earthquakes Visualization | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/05_Earthquakes_visualization.ipynb) |
+| 06 · Snow & Cold Wave Impact Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/06_Snow_Cold_Wave_Impact_Analysis.ipynb) |
+| 07 · Cascading Impacts Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/07_cascading_impacts_analysis.ipynb) |
+| 08 · Queryables Deep Dive | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/08_Queryables_Deep_Dive.ipynb) |
+| 09 · EM-DAT Impact Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/09_EMDAT_Impact_Analysis.ipynb) |
+
+:::{note}
+Binder may take 1–3 minutes to start if the environment isn't cached. Once it loads, all dependencies are pre-installed.
+:::
+
+---
+
+## Run Notebooks Locally
 
 ## Prerequisites
 
