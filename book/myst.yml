@@ -1,9 +1,13 @@
 version: 1
 project:
-  title: Montandon Data Fetching Examples
+  title: "Montandon Data Cookbook: Disaster Analytics with STAC"
+  subtitle: Practical recipes for accessing, analysing, and visualising global disaster data
   authors:
     - name: Arun Gandhi
+      affiliation: IFRC
   github: IFRCGo/montandon-notebooks
+  license: MIT
+  subject: Disaster Data Analytics
   keywords:
     - disaster data
     - STAC API
@@ -11,48 +15,93 @@ project:
     - IFRC
     - data analysis
     - visualization
+    - CQL2
+    - geospatial
+    - cookbook
+
+  # Bibliography
+  bibliography:
+    - references.bib
+
+  # Numbered headings for cross-referencing
+  numbering:
+    heading_2: true
+    heading_3: true
+
   # Launch button (rocket icon) — opens notebook in Binder in a new tab
-  binder:
-    url: https://mybinder.org
-    repo: IFRCGo/montandon-notebooks
-    ref: main
+  binder: https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/HEAD
+
   # In-page execution (Thebe) — run code cells directly on the page
   jupyter:
     binder:
       url: https://mybinder.org
       repo: IFRCGo/montandon-notebooks
       ref: main
+
+  # Math macros used across notebooks
+  math:
+    # Mann-Kendall statistic
+    '\mk': '\text{MK}'
+    '\pval': 'p\text{-value}'
+
   toc:
     - file: intro.md
     - file: getting-started.md
-    - title: Intro Notebook
+
+    - title: "Part I — Foundations"
       children:
         - file: notebooks/01_Getting_Started_Montandon_STAC_API.ipynb
-          title: Introduction to Montandon STAC API
-    - title: Data Analysis
+          title: "Recipe 1: Connecting to the STAC API"
+        - file: notebooks/08_Queryables_Deep_Dive.ipynb
+          title: "Recipe 2: Queryables & CQL2 Reference"
+
+    - title: "Part II — Data Analysis Recipes"
       children:
         - file: notebooks/02_Montandon_data_analysis.ipynb
-          title: Montandon Data Analysis
+          title: "Recipe 3: Multi-Source Hazard Analysis"
         - file: notebooks/03_Time_Series_Analysis.ipynb
-          title: Time Series Analysis
+          title: "Recipe 4: Time-Series Decomposition"
         - file: notebooks/09_EMDAT_Impact_Analysis.ipynb
-          title: EM-DAT Impact Analysis
-    - title: Visualization
+          title: "Recipe 5: EM-DAT People-Impact Mining"
+
+    - title: "Part III — Visualization Recipes"
       children:
         - file: notebooks/04_Recent_Cyclone_Tracking.ipynb
-          title: Recent Cyclone Tracking
+          title: "Recipe 6: Cyclone Track Animation"
         - file: notebooks/05_Earthquakes_visualization.ipynb
-          title: Earthquake Visualization
+          title: "Recipe 7: Earthquake Cluster Maps"
         - file: notebooks/06_Snow_Cold_Wave_Impact_Analysis.ipynb
-          title: Snow & Cold Wave Impact Analysis
-    - title: Advanced Topics
+          title: "Recipe 8: Cold-Wave Impact Dashboard"
+
+    - title: "Part IV — Advanced Recipes"
       children:
         - file: notebooks/07_cascading_impacts_analysis.ipynb
-          title: Cascading Impacts Analysis
-        - file: notebooks/08_Queryables_Deep_Dive.ipynb
-          title: Queryables Deep Dive
+          title: "Recipe 9: Cascading-Impact Analysis"
 
 site:
   template: book-theme
+  nav:
+    - title: IFRC Website
+      url: https://www.ifrc.org/
+    - title: GO Platform
+      url: https://go.ifrc.org/
+    - title: Montandon EOAPI
+      url: https://ifrcgo.org/stac-browser/
+  actions:
+    - title: Launch Binder
+      url: https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/HEAD
+    - title: Open in Colab
+      url: https://colab.research.google.com/github/IFRCGo/montandon-notebooks/
   options:
     logo: logo.svg
+    favicon: logo.svg
+    extra_css:
+      - _static/custom.css
+    analytics:
+      google: ""
+    repository_url: https://github.com/IFRCGo/montandon-notebooks
+    repository_branch: main
+    use_repository_button: true
+    use_issues_button: true
+    use_edit_page_button: true
+    use_download_button: true
