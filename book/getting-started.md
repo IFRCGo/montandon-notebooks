@@ -1,87 +1,75 @@
+﻿(getting-started)=
 # Getting Started
 
-This guide will help you set up your environment to run the Montandon data fetching examples.
-
-## Run Notebooks in Binder (No Setup Required)
-
-Click any badge below to instantly open that notebook in a live Binder environment — no installation needed.
-
-| Notebook | Launch |
-|----------|--------|
-| 01 · Introduction to Montandon STAC API | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/01_Getting_Started_Montandon_STAC_API.ipynb) |
-| 02 · Montandon Data Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/02_Montandon_data_analysis.ipynb) |
-| 03 · Time Series Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/03_Time_Series_Analysis.ipynb) |
-| 04 · Recent Cyclone Tracking | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/04_Recent_Cyclone_Tracking.ipynb) |
-| 05 · Earthquakes Visualization | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/05_Earthquakes_visualization.ipynb) |
-| 06 · Snow & Cold Wave Impact Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/06_Snow_Cold_Wave_Impact_Analysis.ipynb) |
-| 07 · Cascading Impacts Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/07_cascading_impacts_analysis.ipynb) |
-| 08 · Queryables Deep Dive | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/08_Queryables_Deep_Dive.ipynb) |
-| 09 · EM-DAT Impact Analysis | [![Launch in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/09_EMDAT_Impact_Analysis.ipynb) |
-
-:::{note}
-Binder may take 1–3 minutes to start if the environment isn't cached. Once it loads, all dependencies are pre-installed.
+:::{admonition} Prerequisites
+:class: tip
+- Python 3.9+
+- Git
+- A modern web browser
+- An [IFRC GO Platform](https://goadmin-stage.ifrc.org/) account for API access
 :::
 
 ---
 
-## Run Notebooks Locally
+## Run in the Cloud (No Install)
 
-## Prerequisites
+Click any badge below to open a notebook in a live **Binder** or **Google Colab** environment —
+all dependencies are pre-installed.
 
-Before you begin, ensure you have:
+| # | Recipe | Binder | Colab |
+|---|--------|--------|-------|
+| 01 | Connecting to the STAC API | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/01_Getting_Started_Montandon_STAC_API.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/01_Getting_Started_Montandon_STAC_API.ipynb) |
+| 02 | Multi-Source Hazard Analysis | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/02_Montandon_data_analysis.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/02_Montandon_data_analysis.ipynb) |
+| 03 | Time-Series Decomposition | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/03_Time_Series_Analysis.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/03_Time_Series_Analysis.ipynb) |
+| 04 | Cyclone Track Animation | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/04_Recent_Cyclone_Tracking.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/04_Recent_Cyclone_Tracking.ipynb) |
+| 05 | Earthquake Cluster Maps | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/05_Earthquakes_visualization.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/05_Earthquakes_visualization.ipynb) |
+| 06 | Cold-Wave Impact Dashboard | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/06_Snow_Cold_Wave_Impact_Analysis.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/06_Snow_Cold_Wave_Impact_Analysis.ipynb) |
+| 07 | Cascading-Impact Analysis | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/07_cascading_impacts_analysis.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/07_cascading_impacts_analysis.ipynb) |
+| 08 | Queryables & CQL2 Reference | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/08_Queryables_Deep_Dive.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/08_Queryables_Deep_Dive.ipynb) |
+| 09 | EM-DAT People-Impact Mining | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/main?urlpath=lab/tree/book/notebooks/09_EMDAT_Impact_Analysis.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/09_EMDAT_Impact_Analysis.ipynb) |
 
-- Python 3.9 or higher
-- Git (for cloning the repository)
-- A modern web browser
-- An IFRC account for API access
+:::{note}
+Binder may take 1–3 minutes to start if the Docker image is not cached.
+Once loaded, all dependencies are ready.
+:::
+
+---
+
+## Local Setup
 
 ## Step 1: Obtain an API Token
 
 :::{important}
-The Montandon STAC API requires authentication. You'll need a valid API token to fetch live data.
+The Montandon STAC API requires **Bearer Token** authentication.
+You must have a valid token before any data can be retrieved.
 :::
 
 ### How to Get Your Token
 
-1. **Visit the Authentication Portal**
-   - Navigate to [https://goadmin-stage.ifrc.org/](https://goadmin-stage.ifrc.org/)
-   - Click "Sign In" and use your IFRC GO Platform credentials
+1. Navigate to [goadmin-stage.ifrc.org](https://goadmin-stage.ifrc.org/) and
+   click **Sign In**.
+2. Go to **Account Settings** → **API Tokens**.
+3. Click **Generate New Token**, name it (e.g., *Montandon Cookbook*),
+   and copy the value immediately.
 
-2. **Generate an API Token**
-   - Once logged in, go to your account settings
-   - Find the "API Tokens" or "Developer" section
-   - Click "Generate New Token"
-   - Give your token a descriptive name (e.g., "Montandon Examples")
-   - Copy the token immediately - you won't be able to see it again!
-
-3. **Store Your Token Securely**
-   
-   :::{warning}
-   Never commit your API token to version control or share it publicly!
-   :::
+:::{warning}
+**Never** commit your API token to version control or share it publicly.
+Store it in an environment variable or a `.env` file that is listed in
+your `.gitignore`.
+:::
 
 ## Step 2: Set Up Your Environment
 
-### Clone the Repository
+### Clone and Install
 
 ```bash
-git clone https://github.com/IFRCGo/Montandon-Data-Fetching-Examples.git
-cd Montandon-Data-Fetching-Examples
+git clone https://github.com/IFRCGo/montandon-notebooks.git
+cd montandon-notebooks
+pip install uv   # one-time setup
+uv sync          # resolves and installs all dependencies
 ```
 
-### Install Dependencies with uv
-
-This project uses `uv` for dependency management:
-
-```bash
-# Install uv if you haven't already
-pip install uv
-
-# Install all dependencies
-uv sync
-```
-
-### Set Your API Token
+### Configure Your Token
 
 ::::{tab-set}
 :::{tab-item} macOS/Linux
@@ -122,64 +110,57 @@ setx MONTANDON_API_TOKEN "your_token_here"
 
 ## Step 3: Launch Jupyter
 
-Start JupyterLab to work with the notebooks:
-
 ```bash
 uv run jupyter lab
 ```
 
-This will open JupyterLab in your default browser. Navigate to the `montandon_notebooks/` directory to see all available examples.
+Navigate to `book/notebooks/` and open any recipe.
 
-## Step 4: Test Your Setup
+## Step 4: Verify Your Setup
 
-Open the first notebook (`01_Getting_Started_Montandon_STAC_API.ipynb`) and run the initial cells to verify:
+Open **Recipe 1** (`01_Getting_Started_Montandon_STAC_API.ipynb`) and execute
+the first three cells. You should see:
 
-1. ✅ All libraries import successfully
-2. ✅ Your API token is detected
-3. ✅ You can connect to the Montandon API
-4. ✅ You can retrieve sample data
+- All libraries import without errors
+- The `MONTANDON_API_TOKEN` environment variable is detected
+- A successful connection message from the STAC API
+- Sample items returned from `gdacs-events`
 
-## Working with Pre-executed Notebooks
-
-This JupyterBook displays notebooks with cached outputs. This means:
-
-- ✅ You can see results without running code
-- ✅ No API token needed for viewing
-- ⚠️ Data shown may not be current
-- ⚠️ To get live data, run notebooks locally
+:::{admonition} Pre-Executed Outputs
+:class: note
+This Jupyter Book ships with cached cell outputs so you can **read results
+without running code** or providing a token. To fetch *live* data, run the
+notebooks locally or via Binder.
+:::
 
 ## Troubleshooting
 
-### Common Issues and Solutions
+:::{dropdown} {kbd}`ImportError`: No module named `pystac_client`
+Run `uv sync` from the repository root to install all pinned dependencies.
+:::
 
-:::{dropdown} ImportError: No module named 'pystac_client'
-Install the required packages:
+:::{dropdown} {kbd}`401 Unauthorized` from the API
+Your token may be missing, invalid, or expired.
+
+* Verify the variable is set: `echo $MONTANDON_API_TOKEN`
+* Re-generate a token at [goadmin-stage.ifrc.org](https://goadmin-stage.ifrc.org/)
+:::
+
+:::{dropdown} Folium maps not rendering in JupyterLab
+Ensure JavaScript is enabled and try:
 ```bash
-uv sync
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
+As a fallback, save the map to HTML: `m.save("map.html")` and open in a
+browser.
 :::
 
-:::{dropdown} Authentication Error: 401 Unauthorized
-Your API token may be:
-- Missing: Check if `MONTANDON_API_TOKEN` is set
-- Invalid: Verify the token at [goadmin-stage.ifrc.org](https://goadmin-stage.ifrc.org/)
-- Expired: Generate a new token
-:::
+---
 
-:::{dropdown} Folium maps not displaying
-For Jupyter notebooks:
-- Ensure JavaScript is enabled
-- Try: `jupyter nbextension enable --py folium`
-- Consider saving maps as HTML and opening separately
-:::
+## What's Next?
 
-## Next Steps
-
-Now that you're set up:
-
-1. Start with [Introduction to Montandon STAC API](notebooks/01_Getting_Started_Montandon_STAC_API)
-2. Explore different data sources and collections
-3. Try modifying queries to find specific events
-4. Create your own analyses and visualizations
-
-Happy exploring! 🚀
+1. Start with [Recipe 1 — Connecting to the STAC API](notebooks/01_Getting_Started_Montandon_STAC_API)
+2. Explore the [Queryables Deep Dive](notebooks/08_Queryables_Deep_Dive) to
+   master CQL2 filtering
+3. Try modifying queries to analyse your own region or hazard type
+4. Build your own visualisations using the helper functions from any recipe
