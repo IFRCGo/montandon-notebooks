@@ -85,7 +85,7 @@ site:
       url: https://www.ifrc.org/
     - title: GO Platform
       url: https://go.ifrc.org/
-    - title: Montandon EOAPI
+    - title: Montandon STAC API
       url: https://ifrcgo.org/stac-browser/
   actions:
     - title: Launch Binder
