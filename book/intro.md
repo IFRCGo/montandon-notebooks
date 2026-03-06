@@ -1,4 +1,4 @@
-﻿# Montandon Data Cookbook
+# Montandon Data Cookbook
 
 :::{admonition} About This Cookbook
 :class: important
