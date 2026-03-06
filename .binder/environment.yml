@@ -5,7 +5,7 @@ channels:
 # which is a major source of slow solver times on Binder.
 channel_priority: strict
 dependencies:
-  - python=3.11  # 3.11 has more pre-built binaries than 3.12, faster install
+  - python=3.12
   - pip
 
   # Geospatial packages (conda only — need compiled C extensions)
