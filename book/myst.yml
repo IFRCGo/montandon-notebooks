@@ -23,10 +23,6 @@ project:
   bibliography:
     - references.bib
 
-  # Numbered headings for cross-referencing
-  numbering:
-    heading_2: true
-    heading_3: true
 
   # Launch button (rocket icon) — opens notebook in Binder in a new tab
   binder: https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/HEAD
@@ -47,6 +43,7 @@ project:
   toc:
     - file: intro.md
     - file: getting-started.md
+      title: Getting Started
 
     - title: "Part I — Foundations"
       children:
