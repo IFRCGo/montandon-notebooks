@@ -77,6 +77,8 @@ project:
       children:
         - file: notebooks/07_cascading_impacts_analysis.ipynb
           title: "Recipe 9: Cascading-Impact Analysis"
+        - file: notebooks/10_CEMS_Flood_Satellite_Imagery.ipynb
+          title: "Recipe 10: Crete Flood from Satellite Imagery"
 
 site:
   template: book-theme
