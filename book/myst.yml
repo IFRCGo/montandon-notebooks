@@ -23,6 +23,9 @@ project:
   bibliography:
     - references.bib
 
+  # Shows anywidget outputs (manywidgets, lonboard) on the static site
+  plugins:
+    - https://github.com/developmentseed/myst-anywidget-static-export/releases/download/v0.3.2/plugin.mjs
 
   # Launch button (rocket icon) — opens notebook in Binder in a new tab
   binder: https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/HEAD

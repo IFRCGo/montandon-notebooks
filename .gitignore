@@ -52,6 +52,10 @@ coverage.xml
 book/_build/
 book/.jupyter_cache/
 _build/
+_widget_assets/
+
+# Downloads cached by Recipe 10 when it runs
+book/notebooks/data/
 
 # Nano editor recovery files
 *.save

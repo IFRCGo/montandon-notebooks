@@ -40,7 +40,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           
       - name: Install uv
         run: |
@@ -55,10 +55,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
           
       - name: Install MyST Markdown
-        run: npm install -g mystmd
+        run: npm install -g mystmd@1.12.0
         
       - name: Build HTML site
         run: |
