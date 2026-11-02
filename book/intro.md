@@ -2,7 +2,7 @@
 
 :::{admonition} About This Cookbook
 :class: important
-A hands-on collection of **9 ready-to-run recipes** for querying, analysing, and
+A hands-on collection of **10 ready-to-run recipes** for querying, analysing, and
 visualising disaster data through the IFRC Montandon STAC API — from your first
 API call to animated cyclone-track maps and cascading-impact case studies.
 :::
@@ -57,6 +57,8 @@ across types, enabling event → hazard → impact analysis in a single workflow
 :link: notebooks/07_cascading_impacts_analysis.ipynb
 **Recipe 9** Cascading-impact analysis: 2023 Türkiye–Syria earthquake,
 aftershocks, triggered landslides, and displacement data.
+**Recipe 10** Crete flood from satellite imagery: before/after swipe, flood depth,
+and the land and buildings under the water.
 :::
 ::::
 
@@ -93,6 +95,7 @@ Detailed instructions are in [Getting Started](getting-started.md).
 - **USGS** — U.S. Geological Survey earthquake catalogue {cite}`usgs_earthquake`
 - **IBTrACS** — International Best Track Archive for Climate Stewardship {cite}`ibtracs`
 - **PDC** — Pacific Disaster Center {cite}`pdc`
+- **CEMS** — Copernicus Emergency Management Service rapid mapping {cite}`cems`
 :::
 
 :::{tab-item} Impacts

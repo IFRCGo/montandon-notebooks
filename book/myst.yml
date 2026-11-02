@@ -23,6 +23,9 @@ project:
   bibliography:
     - references.bib
 
+  # Shows anywidget outputs (manywidgets, lonboard) on the static site
+  plugins:
+    - https://github.com/developmentseed/myst-anywidget-static-export/releases/download/v0.3.2/plugin.mjs
 
   # Launch button (rocket icon) — opens notebook in Binder in a new tab
   binder: https://mybinder.org/v2/gh/IFRCGo/montandon-notebooks/HEAD
@@ -74,6 +77,8 @@ project:
       children:
         - file: notebooks/07_cascading_impacts_analysis.ipynb
           title: "Recipe 9: Cascading-Impact Analysis"
+        - file: notebooks/10_CEMS_Flood_Satellite_Imagery.ipynb
+          title: "Recipe 10: Crete Flood from Satellite Imagery"
 
 site:
   template: book-theme

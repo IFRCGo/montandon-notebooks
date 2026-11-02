@@ -77,6 +77,7 @@ You can run any notebook directly in Google Colab:
 | 07 - Cascading Impacts         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arunissun/Montandon-Data-Fetching-Examples/blob/master/montandon_notebooks/07_cascading_impacts_analysis.ipynb)         |
 | 08 - Queryables Deep Dive      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arunissun/Montandon-Data-Fetching-Examples/blob/master/montandon_notebooks/08_Queryables_Deep_Dive.ipynb)               |
 | 09 - EM-DAT Impact Analysis    | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/arunissun/Montandon-Data-Fetching-Examples/blob/master/montandon_notebooks/09_EMDAT_Impact_Analysis.ipynb)               |
+| 10 - Crete Flood Imagery       | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IFRCGo/montandon-notebooks/blob/main/book/notebooks/10_CEMS_Flood_Satellite_Imagery.ipynb) |
 
 ## Run Locally
 
@@ -152,6 +153,7 @@ All notebooks are located in the `montandon_notebooks/` folder:
 | 07  | `07_cascading_impacts_analysis.ipynb`         | Cascading disaster impact analysis                              | pystac-client, geopandas, folium, pandas          |
 | 08  | `08_Queryables_Deep_Dive.ipynb`               | Deep dive into STAC API queryables and CQL2 filtering           | pystac-client, requests, plotly, pandas           |
 | 09  | `09_EMDAT_Impact_Analysis.ipynb`              | EM-DAT people impact analysis with memory-optimized CSV export  | pystac-client, csv, pandas                        |
+| 10  | `book/notebooks/10_CEMS_Flood_Satellite_Imagery.ipynb` | Crete flood from satellite imagery: extent, depth, land and buildings | pystac-client, rasterio, lonboard, manywidgets |
 
 ## Data Sources
 
@@ -166,3 +168,4 @@ The Montandon STAC API aggregates disaster and hazard data from multiple sources
 - **IDMC** - Internal Displacement Monitoring Centre
 - **IFRCEVENT** - IFRC Event Database
 - **UNDRR-ISC** - UN Disaster Risk Reduction Registry
+- **CEMS** - Copernicus Emergency Management Service

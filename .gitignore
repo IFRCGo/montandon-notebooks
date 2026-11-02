@@ -52,6 +52,10 @@ coverage.xml
 book/_build/
 book/.jupyter_cache/
 _build/
+_widget_assets/
+
+# Downloads cached by Recipe 10 when it runs
+book/notebooks/data/
 
 # Nano editor recovery files
 *.save
@@ -100,6 +104,7 @@ montandon_notebooks/montandon_case_studies.ipynb
 *.py
 !scripts/
 !scripts/inject_binder_buttons.py
+!scripts/share_map_bundle.py
 montandon_notebooks/montandon_errors.md 
 montandon_example_2.ipynb 
 Event_by_country.ipynb
